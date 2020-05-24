@@ -13,7 +13,7 @@ Depending on the python installation you have, you may use one mail program or a
 
 In the case of the python 2 program, the mail message is quite simpler, as I had some troubles with it.
 
-The mail_p2.py and mail_p3.py programs take an ip address as a parameter, and then use the configuration hardcoded in the code to send an email.
+The mail_p2.py and mail_p3.py programs take an ip address as a parameter, and then use the configuration hardcoded in the code to send an email. Note that the smtp configuration is done for a gmail account.
 
 The check_ip.py program checks the public ip of your network, compares it with the ip read from a file "ip.txt", and if they differ it sends a mail using the mail_p2.py program mentioned before, passing the new ip as a parameter. If the ip hasn't changed, it will create a flag named "no_ip_changes".
 
