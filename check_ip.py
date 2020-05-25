@@ -17,5 +17,7 @@ if is_same == False:
     os.system(line)
     line_2 ="echo " + result + " > ip.txt"
     os.system(line_2)
+    line_3 ="./update_dns.sh \"" + result + "\""
+    os.system(line_3)
 else:
     os.system("touch no_ip_changes")

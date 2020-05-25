@@ -18,3 +18,9 @@ The mail_p2.py and mail_p3.py programs take an ip address as a parameter, and th
 The check_ip.py program checks the public ip of your network, compares it with the ip read from a file "ip.txt", and if they differ it sends a mail using the mail_p2.py program mentioned before, passing the new ip as a parameter. If the ip hasn't changed, it will create a flag named "no_ip_changes".
 
 The first time you may need to create the ip.txt file by yourself, although an example file is also available in the repository.
+
+## dns update
+
+As a last step in the check_ip.py program, I have added the call to the script updste_dns.sh, which connects to the cloudflare API and changes the corresponding A registry to update the dns.
+
+This step is optional, you can remove it from the program, but if you use cloudflare as your dns provider you might find this useful.
