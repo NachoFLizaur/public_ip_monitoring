@@ -8,13 +8,14 @@ ip = sys.argv[1]
 # Specify the sender's and receiver's email addresses:
 # The sender needs to have allowed the use of less secure apps in the google account config
 # https://myaccount.google.com/lesssecureapps
-sender = "your-email@gmail.com"
-password = "your-password"
-receiver = "dest-email@whatever.com"
+sender = ""
+password = ""
+receiver = ""
 
 # email message
-message = """
-This is the new ip: """ + ip
+message = 'Subject: {}\n\n{}'.format("PUBLIC_IP", """###############################
+Your public ip changed to: """ + ip + """
+###############################""")
 
 # message = """\
 # Subject: The IP has changed
